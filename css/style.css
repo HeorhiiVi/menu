@@ -1,0 +1,85 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #424242;
+}
+
+header{
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu ul,
+.menu li{
+    list-style: none;
+}
+
+.menu > ul{
+    display: flex;
+    justify-content: center;
+}
+
+.menu > ul li a{
+    min-width: 100px;
+    display: block;
+    background: #ffffff;
+    padding: 15px 30px 15px 40px;
+    font-size: 16px;
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.menu > ul li{
+    position: relative;
+    border-right: 2px solid rgb(26, 26, 26);
+}
+
+.menu > ul li > a i.fas{
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    font-size: 18px;
+}
+
+.menu > ul li:first-child{
+    border-left: 1px solid rgb(26, 26, 26);
+}
+
+.menu > ul li:last-child{
+    border-right: 1px solid rgb(26, 26, 26);
+}
+
+.menu li a:hover{
+    background-color: #a30b0b;
+    color: white;
+    box-shadow: 1px 10px 10px -5px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+/*Sub menu*/
+
+.menu li ul{
+   position: absolute;
+   min-width: 100px;
+   display: none;
+}
+
+.menu li > ul li{
+    border: 1px solid rgb(26, 26, 26);
+}
+
+.menu li > ul li a{
+    padding: 15px;
+    background-color: rgb(223, 223, 223);
+}
+
+.menu li:hover > ul{
+    display: table;
+    transition: all 0.3s ease;
+}
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+</style>
